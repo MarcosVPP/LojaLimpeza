@@ -74,6 +74,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Mapeamentos\ItemPedido.hbm.xml" />
     <Content Include="Mapeamentos\Contato.hbm.xml" />
     <Content Include="Mapeamentos\Cliente.hbm.xml" />
     <Content Include="Mapeamentos\Endereco.hbm.xml" />
