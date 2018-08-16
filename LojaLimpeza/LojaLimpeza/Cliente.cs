@@ -17,7 +17,7 @@ namespace LojaLimpeza
         public Contato Contato { get; set; }
         public Endereco Endereco { get; set; }
         public StatusDoCliente StatusDoCliente { get; set; }
-        public int LimiteDeCredito { get { return this.limiteDeCredito; } }
+        public int LimiteCredito { get { return this.limiteDeCredito; } }
         public IList<Pedido> ListaDePedido = new List<Pedido>();
 
         public Cliente(int id, string nomeDoCliente, string cpf, string filiacao, Contato contato, Endereco endereco, int limiteDeCredito)

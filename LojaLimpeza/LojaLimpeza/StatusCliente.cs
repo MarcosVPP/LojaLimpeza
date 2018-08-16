@@ -16,15 +16,15 @@ namespace LojaLimpeza
         {
             foreach (var listaDeCliente in ListaDeCliente)
             {
-                if (cliente.LimiteDeCredito < 1000)
+                if (cliente.LimiteCredito < 1000)
                 {
                     this.IdStatus = 1;
                 }
-                else if (cliente.LimiteDeCredito <= 3000)
+                else if (cliente.LimiteCredito <= 3000)
                 {
                     this.IdStatus = 2;
                 }
-                else if (cliente.LimiteDeCredito > 3000)
+                else if (cliente.LimiteCredito > 3000)
                 {
                     this.IdStatus = 3;
                 }
