@@ -6,7 +6,6 @@
     <id name="IdContato">
       <generator clas="identity"/>
     </id>
-    <property name="IdCliente"/>
     <property name="NomeContato"/>
     <property name="Email"/>
     <property name="ListaDeTelefones"/>
