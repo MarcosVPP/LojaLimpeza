@@ -74,6 +74,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Mapeamentos\Contato.hbm.xml" />
+    <Content Include="Mapeamentos\Cliente.hbm.xml" />
+    <Content Include="Mapeamentos\Endereco.hbm.xml" />
     <Content Include="Mapeamentos\hibernate.cfg.xml" />
     <Content Include="Mapeamentos\Produto.hbm.xml" />
   </ItemGroup>
