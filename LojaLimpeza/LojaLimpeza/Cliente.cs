@@ -8,27 +8,27 @@ namespace LojaLimpeza
 {
     public class Cliente
     {
-        private int limiteDeCredito;
+        private int limiteCredito;
 
-        public int IdCliente { get; set; }
+        public int CodigoCliente { get; set; }
         public string NomeCliente { get; set; }
         public string CPF { get; set; }
         public string Filiacao { get; set; }
         public Contato Contato { get; set; }
         public Endereco Endereco { get; set; }
-        public StatusDoCliente StatusDoCliente { get; set; }
-        public int LimiteCredito { get { return this.limiteDeCredito; } }
-        public IList<Pedido> ListaDePedido = new List<Pedido>();
+        public StatusCliente StatusCliente { get; set; }
+        public int LimiteCredito { get { return this.limiteCredito; } }
+        public IList<Pedido> ListaPedido = new List<Pedido>();
 
-        public Cliente(int id, string nomeDoCliente, string cpf, string filiacao, Contato contato, Endereco endereco, int limiteDeCredito)
+        public Cliente(int id, string nomeCliente, string cpf, string filiacao, Contato contato, Endereco endereco, int limiteCredito)
         {
-            this.IdCliente = id;
-            this.NomeCliente = nomeDoCliente;
+            this.CodigoCliente = id;
+            this.NomeCliente = nomeCliente;
             this.CPF = cpf;
             this.Filiacao = filiacao;
             this.Contato = contato;
             this.Endereco = endereco;
-            this.limiteDeCredito = limiteDeCredito;
+            this.limiteCredito = limiteCredito;
         }
     }
 }

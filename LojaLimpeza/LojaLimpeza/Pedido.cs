@@ -8,36 +8,36 @@ namespace LojaLimpeza
 {
     public class Pedido
     {
-        public int IdPedido { get; set; }
+        public int CodigoPedido { get; set; }
         public DateTime DataPedido { get; set; }
         public Cliente Cliente { get; set; }
         public Produto Produto { get; set; }
         public float ValorDoPedido { get; set; }
         public IList<ItemPedido> ListaItemPedido = new List<ItemPedido>();
 
-        public Pedido(int id, DateTime dataDoPedido, Cliente cliente)
+        public Pedido(int id, DateTime dataPedido, Cliente cliente)
         {
-            this.IdPedido = id;
+            this.CodigoPedido = id;
             this.Cliente = cliente;
-            this.DataPedido = dataDoPedido;
-            RetiraProdutoDoEstoque();
+            this.DataPedido = dataPedido;
+            RetiraProdutoEstoque();
         }
 
         public void AdicionaItemPedido(ItemPedido item)
         {
             ListaItemPedido.Add(item);
-            CalculoValorDoPedido(item);
+            CalculoValorPedido(item);
         }
 
-        public void RetiraProdutoDoEstoque()
+        public void RetiraProdutoEstoque()
         {
             foreach (var itemPedido in ListaItemPedido)
             {
-                var validaEstoque = itemPedido.ValidaQuantidadeItemDePedido();
+                var validaEstoque = itemPedido.ValidaQuantidadeItemPedido();
 
                 if (validaEstoque)
                 {
-                    itemPedido.QuantidadeItemPedido -= Produto.QuantidadeEmEstoque;
+                    itemPedido.QuantidadeItemPedido -= Produto.QuantidadeEstoque;
                 }
             }
         }
@@ -50,7 +50,7 @@ namespace LojaLimpeza
             }
         }
 
-        public void CalculoValorDoPedido(ItemPedido item)
+        public void CalculoValorPedido(ItemPedido item)
         {
             foreach (var itemDePedido in ListaItemPedido)
             {

@@ -8,15 +8,15 @@ namespace LojaLimpeza
 {
     public class Contato
     {
-        public int IdContato { get; set; }
+        public int CodigoContato { get; set; }
         public string NomeContato { get; set; }
         public string Email { get; set; }
-        public List<Telefone> ListaDeTelefones = new List<Telefone>();
+        public List<Telefone> ListaTelefones = new List<Telefone>();
 
-        public Contato(int id, string nomeDoContato, string email)
+        public Contato(int id, string nomeContato, string email)
         {
-            this.IdContato = id;
-            this.NomeContato = nomeDoContato;
+            this.CodigoContato = id;
+            this.NomeContato = nomeContato;
             this.Email = email;
         }
     }

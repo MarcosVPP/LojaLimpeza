@@ -6,31 +6,31 @@ using System.Threading.Tasks;
 
 namespace LojaLimpeza
 {
-    public class StatusDoCliente
+    public class StatusCliente
     {
-        public int IdStatus { get; set; }
-        public IList<Cliente> ListaDeCliente = new List<Cliente>();
+        public int CodigoStatus { get; set; }
+        public IList<Cliente> ListaCliente = new List<Cliente>();
         public string NomeStatus { get; set; }
 
         public void VerificarStatusCliente(Cliente cliente)
         {
-            foreach (var listaDeCliente in ListaDeCliente)
+            foreach (var listaCliente in ListaCliente)
             {
                 if (cliente.LimiteCredito < 1000)
                 {
-                    this.IdStatus = 1;
+                    this.CodigoStatus = 1;
                 }
                 else if (cliente.LimiteCredito <= 3000)
                 {
-                    this.IdStatus = 2;
+                    this.CodigoStatus = 2;
                 }
                 else if (cliente.LimiteCredito > 3000)
                 {
-                    this.IdStatus = 3;
+                    this.CodigoStatus = 3;
                 }
                 else
                 {
-                    throw new Exception("Status do Cliente inváido !");
+                    throw new Exception("Status do Cliente inváido !!!");
                 }
             }
         }

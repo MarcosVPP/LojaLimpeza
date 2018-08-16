@@ -25,7 +25,7 @@ namespace LojaLimpeza
 
         public void Validacoes()
         {
-            ValidaQuantidadeItemDePedido();
+            ValidaQuantidadeItemPedido();
             CalculaValorDoItem();
             RemoveEstoque();
         }
@@ -35,9 +35,9 @@ namespace LojaLimpeza
             Produto.RemoverEstoque(QuantidadeItemPedido);
         }
 
-        public bool ValidaQuantidadeItemDePedido()
+        public bool ValidaQuantidadeItemPedido()
         {
-            if (this.QuantidadeItemPedido > 0 && this.QuantidadeItemPedido < this.Produto.QuantidadeEmEstoque)
+            if (this.QuantidadeItemPedido > 0 && this.QuantidadeItemPedido < this.Produto.QuantidadeEstoque)
             {
                 return true;
             }

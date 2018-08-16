@@ -8,7 +8,7 @@ namespace LojaLimpeza
 {
     public class Endereco
     {
-        public int IdEndereco { get; set; }
+        public int CodigoEndereco { get; set; }
         public string Rua { get; set; }
         public int Numero { get; set; }
         public string Complemento { get; set; }
@@ -19,7 +19,7 @@ namespace LojaLimpeza
 
         public Endereco(int id, string rua, int numero, string complemento, string bairro, string cidade, string uf, string cep)
         {
-            this.IdEndereco = id;
+            this.CodigoEndereco = id;
             this.Rua = rua;
             this.Numero = numero;
             this.Complemento = complemento;
