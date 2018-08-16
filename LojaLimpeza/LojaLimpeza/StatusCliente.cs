@@ -30,7 +30,7 @@ namespace LojaLimpeza
                 }
                 else
                 {
-                    throw new Exception("Status do cliente inváido");
+                    throw new Exception("Status do Cliente inváido !");
                 }
             }
         }
