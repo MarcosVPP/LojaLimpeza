@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly ="LojaLimpeza"
+                   namespace="LojaLimpeza">
+  <class name="Endereco">
+    <id name="IdEndereco">
+      <generator clas="identity"/>
+    </id>
+    <property name="Rua"/>
+    <property name="Numero"/>
+    <property name="Complemento"/>
+    <property name="Bairro"/>
+    <property name="Cidade"/>
+    <property name="UF"/>
+    <property name="CEP"/>
+  </class>
+</hibernate-mapping>
