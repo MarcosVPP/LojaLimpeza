@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace LojaLimpeza
 {
-    class Program
+    public class Telefone
     {
-        static void Main(string[] args)
-        {
-        }
+        public int CodigoTelefone;
+        public string NumTelefone;
+
+        
     }
 }

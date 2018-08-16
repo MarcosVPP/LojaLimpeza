@@ -60,15 +60,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categoria.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Contato.cs" />
     <Compile Include="Endereco.cs" />
+    <Compile Include="Fornecedor.cs" />
     <Compile Include="ItemPedido.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatusCliente.cs" />
+    <Compile Include="Telefone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace LojaLimpeza
 {
-    class Program
+    public class Fornecedor
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
