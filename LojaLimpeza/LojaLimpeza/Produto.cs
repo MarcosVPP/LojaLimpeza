@@ -14,7 +14,7 @@ namespace LojaLimpeza
         public string Categoria { get; set; }
         public int DataFabricacao { get; set; }
         public int DataValidade { get; set; }
-        public int quantidade { get; set; }
+        public int Quantidade { get; set; }
     }
 
 }
