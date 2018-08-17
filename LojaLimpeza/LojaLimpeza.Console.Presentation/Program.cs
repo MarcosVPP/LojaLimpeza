@@ -44,9 +44,6 @@ namespace LojaLimpeza.Console.Presentation
             var nome = System.Console.ReadLine();
 
 
-            CategoriaService salva = new CategoriaService();
-
-            salva.Salvar(codigo, nome);
         }
     }
 }
