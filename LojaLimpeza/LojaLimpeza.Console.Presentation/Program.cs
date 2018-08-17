@@ -16,13 +16,11 @@ namespace LojaLimpeza.Console.Presentation
 
             Cadastro();
 
-            ShowLit();
+            ShowList();
         }
 
-        private static void ShowLit()
+        private static void ShowList()
         {
-            
-
             var categorias = categoriaService.Listar();
 
             foreach (var item in categorias)
@@ -34,8 +32,7 @@ namespace LojaLimpeza.Console.Presentation
         }
 
         private static void Cadastro()
-        {
-            
+        { 
             System.Console.WriteLine("Informe os dados para cadastro");
             System.Console.Write("Código: ");
             var codigo = int.Parse(System.Console.ReadLine());
