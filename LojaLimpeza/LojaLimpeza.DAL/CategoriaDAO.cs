@@ -13,9 +13,10 @@ namespace LojaLimpeza.DAL
         public CategoriaDAO()
         {
             this.categorias = new List<Domain.Categoria>();
-            categorias.Add(new Domain.Categoria(1, "Cozinha"));
+      /*    categorias.Add(new Domain.Categoria(1, "Cozinha"));
             categorias.Add(new Domain.Categoria(2, "Vidros"));
             categorias.Add(new Domain.Categoria(3, "Banheiro"));
+      */
         }
         
 
