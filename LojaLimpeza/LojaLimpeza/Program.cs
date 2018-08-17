@@ -10,6 +10,19 @@ namespace LojaLimpeza
     {
         static void Main(string[] args)
         {
+            /*    int contador = 0;
+
+                Console.Write("Crie seu pedido\n");
+
+                while (contador == 0)
+                {
+                    Console.Write("Escreva um produto que queira comrpar:");
+                    Console.ReadLine();
+
+                }
+
+                Console.ReadKey();
+    */
         }
     }
 }
