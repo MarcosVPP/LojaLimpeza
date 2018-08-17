@@ -30,6 +30,21 @@ namespace LojaLimpeza
             ValidaEstoque(quantidade);
         }
 
+        public int Codigo { get; set; }
+        public string Nome { get; set; }
+        public double Valor { get; set; }
+        public string Categoria { get; set; }
+        public int DataFabricacao { get; set; }
+        public int DataValidade { get; set; }
+        public int Quantidade { get; set; }
+        public int QuantidadeEmEstoque { get; internal set; }
+        public int Preco { get; internal set; }
+
+        internal void RemoverEstoque(int quantidadeItemPedido)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool ValidaPrecoProduto()
         {
             if (this.Preco > 0)
@@ -73,6 +88,11 @@ namespace LojaLimpeza
             {
                 throw new Exception("Quantidade á ser adicionada deve ser maior que zero !!!");
             }
+
+            if (this.Valor <= 0)
+                return false;
+            else
+                return true;
         }
     }
 

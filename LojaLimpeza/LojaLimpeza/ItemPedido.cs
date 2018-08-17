@@ -49,14 +49,16 @@ namespace LojaLimpeza
 
         public void CalculaValorDoItem()
         {
-            var validaPrecoProduto = Produto.ValidaPrecoProduto();
-            if (validaPrecoProduto)
+
+            bool ValidaPrecoProduto = Produto.ValidaPrecoProduto();
+
+            if (ValidaPrecoProduto != true)
             {
-                this.valorDoItem = this.Produto.Preco * this.QuantidadeItemPedido;
+                throw new Exception("O preço do produto é inválido");
             }
             else
             {
-                throw new Exception("O preço do produto é inválido");
+                this.valorDoItem = this.Produto.Preco * this.QuantidadeItemPedido;
             }
         }
     }

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly ="LojaLimpeza"
+                   namespace="LojaLimpeza">
+  <class name="Cliente">
+    <id name="IdCliente">
+      <generator clas="identity"/>
+    </id>
+    <property name="NomeCliente"/>
+    <property name="CPF"/>
+    <property name="Filiacao"/>
+    <property name="Contato"/>
+    <property name="Endereco"/>
+    <property name="limiteDeCredito"/>
+  </class>
+</hibernate-mapping>

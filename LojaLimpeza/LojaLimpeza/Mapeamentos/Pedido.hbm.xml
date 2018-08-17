@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly ="LojaLimpeza"
+                   namespace="LojaLimpeza">
+  <class name="Pedido">
+    <id name="IdPedido">
+      <generator clas="identity"/>
+    </id>
+    <property name="DataPedido"/>
+    <property name="Cliente"/>
+    <property name="Produto"/>
+    <property name="ValorDoPedido"/>
+    <property name="ListaItemPedido"/>
+  </class>
+</hibernate-mapping>

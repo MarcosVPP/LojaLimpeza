@@ -78,7 +78,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Mapeamentos\Telefone.hbm.xml" />
+    <Content Include="Mapeamentos\ItemPedido.hbm.xml" />
+    <Content Include="Mapeamentos\Contato.hbm.xml" />
+    <Content Include="Mapeamentos\Cliente.hbm.xml" />
+    <Content Include="Mapeamentos\Endereco.hbm.xml" />
     <Content Include="Mapeamentos\hibernate.cfg.xml" />
+    <Content Include="Mapeamentos\StatusCliente.hbm.xml" />
+    <Content Include="Mapeamentos\Pedido.hbm.xml" />
     <Content Include="Mapeamentos\Produto.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
