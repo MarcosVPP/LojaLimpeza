@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LojaLimpeza.Service;
+﻿using LojaLimpeza.Service;
 
 namespace LojaLimpeza.Console.Presentation
 {
@@ -34,19 +29,24 @@ namespace LojaLimpeza.Console.Presentation
 
         private static void Cadastro()
         {
-            /*    System.Console.WriteLine("Informe os dados para cadastro");
-                System.Console.Write("Código: ");
-                var codigo = int.Parse(System.Console.ReadLine());
-
-                System.Console.Write("Nome: ");
-                var nome = System.Console.ReadLine();
+            /*    
 
                 Domain.Categoria categoria = new Domain.Categoria(codigo, nome);
 
                 categoriaService.Salvar(categoria);
            */
 
+            System.Console.WriteLine("Informe os dados para cadastro");
+            System.Console.Write("Código: ");
+            var codigo = int.Parse(System.Console.ReadLine());
 
+            System.Console.Write("Nome: ");
+            var nome = System.Console.ReadLine();
+
+
+            CategoriaService salva = new CategoriaService();
+
+            salva.Salvar(codigo, nome);
         }
     }
 }
