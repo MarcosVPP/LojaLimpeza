@@ -18,14 +18,10 @@ namespace LojaLimpeza.Service
 
         public List<Domain.CategoriaDomain> Listar()
         {
-            
-
             return categoriaDAO.Listar();
         }
-        public void Salvar(int codigo, string nome)
-        {
-            
-            throw new NotImplementedException();
-        }
+        public void Salvar(int codigo, string nome) => throw new NotImplementedException();
     }
+
+    
 }
