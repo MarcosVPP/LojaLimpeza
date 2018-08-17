@@ -14,8 +14,6 @@ namespace LojaLimpeza.Console.Presentation
         {
             categoriaService = new Service.CategoriaService();
 
-            ShowLit();
-
             Cadastro();
 
             ShowLit();
