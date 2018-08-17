@@ -79,6 +79,8 @@
     <Content Include="Mapeamentos\Cliente.hbm.xml" />
     <Content Include="Mapeamentos\Endereco.hbm.xml" />
     <Content Include="Mapeamentos\hibernate.cfg.xml" />
+    <Content Include="Mapeamentos\StatusCliente.hbm.xml" />
+    <Content Include="Mapeamentos\Pedido.hbm.xml" />
     <Content Include="Mapeamentos\Produto.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
