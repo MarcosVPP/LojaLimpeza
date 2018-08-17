@@ -21,5 +21,9 @@ namespace LojaLimpeza.Service
 
             return categoriaDAO.Listar();
         }
+        public void Salvar(int codigo, string nome)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
