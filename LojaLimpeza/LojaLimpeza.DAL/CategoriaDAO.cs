@@ -8,11 +8,11 @@ namespace LojaLimpeza.DAL
 {
     public class CategoriaDAO
     {
-        private List<Domain.Categoria> categorias;
+        private List<Domain.CategoriaDomain> categorias;
 
         public CategoriaDAO()
         {
-            this.categorias = new List<Domain.Categoria>();
+            this.categorias = new List<Domain.CategoriaDomain>();
       /*    categorias.Add(new Domain.Categoria(1, "Cozinha"));
             categorias.Add(new Domain.Categoria(2, "Vidros"));
             categorias.Add(new Domain.Categoria(3, "Banheiro"));
@@ -20,7 +20,7 @@ namespace LojaLimpeza.DAL
         }
         
 
-        public void Salvar(Domain.Categoria categoria)
+        public void Salvar(Domain.CategoriaDomain categoria)
         {
             var categoriaSalva = Obter(categoria.Codigo);
 
@@ -30,12 +30,12 @@ namespace LojaLimpeza.DAL
                 categoriaSalva.Nome = categoria.Nome;
         }
 
-        public List<Domain.Categoria> Listar()
+        public List<Domain.CategoriaDomain> Listar()
         {
             return categorias;
         }
 
-        public Domain.Categoria Obter(int codigo)
+        public Domain.CategoriaDomain Obter(int codigo)
         {
             return categorias.Where(c => c.Codigo == codigo).FirstOrDefault();
         }

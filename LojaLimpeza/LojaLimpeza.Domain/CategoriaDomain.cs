@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace LojaLimpeza.Domain
 {
-    public class Categoria
+    public class CategoriaDomain
     {
         public int Codigo { get; set; }
         public string Nome { get; set; }
 
-        public Categoria(int codigo, string nome)
+        public CategoriaDomain(int codigo, string nome)
         {
             this.Codigo = codigo;
             this.Nome = nome;
