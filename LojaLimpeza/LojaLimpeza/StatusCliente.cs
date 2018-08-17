@@ -20,11 +20,11 @@ namespace LojaLimpeza
                 {
                     this.CodigoStatus = 1;
                 }
-                else if (cliente.LimiteCredito <= 3000)
+                else if (cliente.LimiteCredito <= 5000)
                 {
                     this.CodigoStatus = 2;
                 }
-                else if (cliente.LimiteCredito > 3000)
+                else if (cliente.LimiteCredito > 5000)
                 {
                     this.CodigoStatus = 3;
                 }
