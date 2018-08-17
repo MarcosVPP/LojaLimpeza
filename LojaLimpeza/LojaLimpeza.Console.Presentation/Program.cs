@@ -16,10 +16,10 @@ namespace LojaLimpeza.Console.Presentation
 
             Cadastro();
 
-            ShowLit();
+            ShowList();
         }
 
-        private static void ShowLit()
+        private static void ShowList()
         {
             var categorias = categoriaService.Listar();
 
