@@ -8,19 +8,19 @@ namespace LojaLimpeza
 {
     public class Produto
     {
-        public int CodigoProduto { get; set; }
-        public string NomeProduto { get; set; }
+        public int Codigo { get; set; }
+        public string Nome { get; set; }
         public DateTime DataFabricacao { get; set; }
         public DateTime DataValidade { get; set; }
         public int QuantidadeEstoque { get; set; }
         public Categoria Categoria { get; set; }
-        public Fornecedor Fornecedor { get { return this.Fornecedor; } }
+        //public Fornecedor Fornecedor { get { return this.Fornecedor; } }
         public float Preco { get; set; }
 
         public Produto(int id, string nome, DateTime dataFabricacao, DateTime dataValidade, int quantidade, Categoria categoria, float preco)
         {
-            this.CodigoProduto = id;
-            this.NomeProduto = nome;
+            this.Codigo = id;
+            this.Nome = nome;
             this.DataFabricacao = dataFabricacao;
             this.DataValidade = dataValidade;
             this.QuantidadeEstoque = quantidade;
