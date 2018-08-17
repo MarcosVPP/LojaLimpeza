@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LojaLimpeza.Domain;
 
 namespace LojaLimpeza.Service
 {
@@ -23,6 +24,7 @@ namespace LojaLimpeza.Service
         }
         public void Salvar(int codigo, string nome)
         {
+            
             throw new NotImplementedException();
         }
     }
