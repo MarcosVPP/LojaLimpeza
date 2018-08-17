@@ -23,9 +23,12 @@ namespace LojaLimpeza
             throw new NotImplementedException();
         }
 
-        internal object ValidaPrecoProduto()
+        public bool ValidaPrecoProduto()
         {
-            throw new NotImplementedException();
+            if (this.Valor <= 0)
+                return false;
+            else
+                return true;
         }
     }
 
