@@ -8,8 +8,6 @@ namespace LojaLimpeza
 {
     public class Fornecedor
     {
-<<<<<<< HEAD
-=======
         public int CodigoFornecedor { get; set; }
         public string CNPJ { get; set; }
         public string NomeFantasia { get; set; }
@@ -22,6 +20,5 @@ namespace LojaLimpeza
             this.NomeFantasia = nomeFantasia;
             this.RazaoSocial = razaoSocial;
         }
->>>>>>> 8d6637edbfd2ebc92e3f7cc471953df8b6bf351e
     }
 }
