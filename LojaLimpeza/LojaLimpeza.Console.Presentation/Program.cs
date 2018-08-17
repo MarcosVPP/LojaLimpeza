@@ -34,7 +34,7 @@ namespace LojaLimpeza.Console.Presentation
                 Domain.Categoria categoria = new Domain.Categoria(codigo, nome);
 
                 categoriaService.Salvar(categoria);
-           */
+           
 
             System.Console.WriteLine("Informe os dados para cadastro");
             System.Console.Write("Código: ");
@@ -42,8 +42,9 @@ namespace LojaLimpeza.Console.Presentation
 
             System.Console.Write("Nome: ");
             var nome = System.Console.ReadLine();
-
+            */
 
         }
+
     }
 }
