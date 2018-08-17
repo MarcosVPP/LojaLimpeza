@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly ="LojaLimpeza"
+                   namespace="LojaLimpeza">
+  <class name="Telefone">
+    <id name="IdTelefone">
+      <generator clas="identity"/>
+    </id>
+    <property name="Numero1"/>
+    <property name="Numero2"/>
+    <property name="Numero3"/>
+  </class>
+</hibernate-mapping>

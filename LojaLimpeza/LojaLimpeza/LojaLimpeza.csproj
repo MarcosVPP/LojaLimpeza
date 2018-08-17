@@ -65,15 +65,18 @@
     <Compile Include="Endereco.cs" />
     <Compile Include="ItemPedido.cs" />
     <Compile Include="Pedido.cs" />
+    <Compile Include="Produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatusCliente.cs" />
+    <Compile Include="Telefone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Mapeamentos\Telefone.hbm.xml" />
     <Content Include="Mapeamentos\ItemPedido.hbm.xml" />
     <Content Include="Mapeamentos\Contato.hbm.xml" />
     <Content Include="Mapeamentos\Cliente.hbm.xml" />
