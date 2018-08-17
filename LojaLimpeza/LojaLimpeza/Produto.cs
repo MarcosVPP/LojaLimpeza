@@ -15,6 +15,18 @@ namespace LojaLimpeza
         public int DataFabricacao { get; set; }
         public int DataValidade { get; set; }
         public int Quantidade { get; set; }
+        public int QuantidadeEmEstoque { get; internal set; }
+        public int Preco { get; internal set; }
+
+        internal void RemoverEstoque(int quantidadeItemPedido)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal object ValidaPrecoProduto()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

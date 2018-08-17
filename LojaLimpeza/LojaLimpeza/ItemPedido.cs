@@ -50,6 +50,7 @@ namespace LojaLimpeza
         public void CalculaValorDoItem()
         {
             var validaPrecoProduto = Produto.ValidaPrecoProduto();
+
             if (validaPrecoProduto)
             {
                 this.valorDoItem = this.Produto.Preco * this.QuantidadeItemPedido;
