@@ -27,24 +27,31 @@ namespace LojaLimpeza.Console.Presentation
             System.Console.ReadKey();
         }
 
-        private static void Cadastro()
+
+        private Service.CategoriaService CategoriaService = new Service.CategoriaService();
+
+        private void Cadastro(Service.CategoriaService cadastro)
         {
+            CategoriaService.Salvar(Cadastro);
             /*    
 
-                Domain.Categoria categoria = new Domain.Categoria(codigo, nome);
+            Domain.Categoria categoria = new Domain.Categoria(codigo, nome);
 
-                categoriaService.Salvar(categoria);
-           
+            categoriaService.Salvar(categoria);
 
-            System.Console.WriteLine("Informe os dados para cadastro");
-            System.Console.Write("Código: ");
-            var codigo = int.Parse(System.Console.ReadLine());
 
-            System.Console.Write("Nome: ");
-            var nome = System.Console.ReadLine();
-            */
+        System.Console.WriteLine("Informe os dados para cadastro");
+        System.Console.Write("Código: ");
+        var codigo = int.Parse(System.Console.ReadLine());
+
+        System.Console.Write("Nome: ");
+        var nome = System.Console.ReadLine();
+        */
 
         }
 
     }
+
 }
+
+
