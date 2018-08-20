@@ -82,7 +82,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Mappings\Categoria.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Categoria.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="hibernate.cfg.xml">
