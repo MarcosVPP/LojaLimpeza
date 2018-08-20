@@ -88,7 +88,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="hibernate.cfg.xml">
+    <Content Include="nhibernate.cfg.xml">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
