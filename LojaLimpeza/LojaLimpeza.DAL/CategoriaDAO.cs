@@ -27,10 +27,11 @@ namespace LojaLimpeza.DAL
             if (categoriaSalva == null)
             {
                 this.categorias.Add(categoria);
-                
-                    configuration.Configure();
-                    configuration.AddAssembly(typeof(Mappings).Assembly);
-                
+
+                Configuration configuration = new Configuration();
+                configuration.Configure();
+                configuration.AddAssembly(typeof(Mappings).Assembly);
+
             }
 
             else
