@@ -1,8 +1,6 @@
-﻿using LojaLimpeza.Service;
-
-namespace LojaLimpeza.Console.Presentation
+﻿namespace LojaLimpeza.Console.Presentation
 {
-    class Program
+    public class Program
     {
         static Service.CategoriaService categoriaService;
 
@@ -28,26 +26,21 @@ namespace LojaLimpeza.Console.Presentation
         }
 
 
-        private Service.CategoriaService CategoriaService = new Service.CategoriaService();
-
-        private void Cadastro(Service.CategoriaService cadastro)
+        private static void Cadastro()
         {
-            CategoriaService.Salvar(Cadastro);
-            /*    
 
-            Domain.Categoria categoria = new Domain.Categoria(codigo, nome);
+            System.Console.WriteLine("Informe os dados para cadastro");
+            System.Console.Write("Código: ");
+            var codigo = int.Parse(System.Console.ReadLine());
 
+            System.Console.Write("Nome: ");
+            var nome = System.Console.ReadLine();
+
+            Domain.CategoriaDomain categoria = new Domain.CategoriaDomain(codigo, nome);
+            
             categoriaService.Salvar(categoria);
 
-
-        System.Console.WriteLine("Informe os dados para cadastro");
-        System.Console.Write("Código: ");
-        var codigo = int.Parse(System.Console.ReadLine());
-
-        System.Console.Write("Nome: ");
-        var nome = System.Console.ReadLine();
-        */
-
+            
         }
 
     }

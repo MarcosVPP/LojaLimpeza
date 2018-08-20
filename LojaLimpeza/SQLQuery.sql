@@ -1,5 +1,5 @@
 create database  LojaLimpezaDB;
 create table categoria(
-       codigo decimal,
-	   nome varchar
+       codigo (decimal(),AUTO_INCREMENT, Chave Primária)
+	   nome varchar()
 );

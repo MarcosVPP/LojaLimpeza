@@ -11,10 +11,7 @@ namespace LojaLimpeza.Service
     {
         private DAL.CategoriaDAO categoriaDAO = new DAL.CategoriaDAO();
 
-        public void Salvar(Domain.CategoriaDomain categoria)
-        {
-            categoriaDAO.Salvar(categoria);
-        }
+        public void Salvar(Domain.CategoriaDomain categoria) => categoriaDAO.Salvar(categoria);
 
         public List<Domain.CategoriaDomain> Listar()
         {

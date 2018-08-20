@@ -1,8 +1,7 @@
-﻿using System;
+﻿using NHibernate;
+using NHibernate.Cfg;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LojaLimpeza.DAL
 {
@@ -13,21 +12,31 @@ namespace LojaLimpeza.DAL
         public CategoriaDAO()
         {
             this.categorias = new List<Domain.CategoriaDomain>();
-      /*    categorias.Add(new Domain.Categoria(1, "Cozinha"));
-            categorias.Add(new Domain.Categoria(2, "Vidros"));
-            categorias.Add(new Domain.Categoria(3, "Banheiro"));
-      */
+            /*    categorias.Add(new Domain.Categoria(1, "Cozinha"));
+                  categorias.Add(new Domain.Categoria(2, "Vidros"));
+                  categorias.Add(new Domain.Categoria(3, "Banheiro"));
+            */
         }
-        
+        public ISession session;
+
 
         public void Salvar(Domain.CategoriaDomain categoria)
         {
             var categoriaSalva = Obter(categoria.Codigo);
 
             if (categoriaSalva == null)
+            {
                 this.categorias.Add(categoria);
+                
+                    configuration.Configure();
+                    configuration.AddAssembly(typeof(Mappings).Assembly);
+                
+            }
+
             else
+            {
                 categoriaSalva.Nome = categoria.Nome;
+            }
         }
 
         public List<Domain.CategoriaDomain> Listar()

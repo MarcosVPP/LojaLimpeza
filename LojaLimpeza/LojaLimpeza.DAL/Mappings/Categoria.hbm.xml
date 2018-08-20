@@ -4,7 +4,7 @@
                    namespace="LojaLimpezaDAL">
   <class name="Categoria.DAL">
     <id name="Codigo">
-      <generator clas="identity"/>
+      <generator class="identity"/>
     </id>
     <property name="Nome"/>
   </class>
