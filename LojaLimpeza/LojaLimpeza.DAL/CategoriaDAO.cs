@@ -21,9 +21,10 @@ namespace LojaLimpeza.DAL
                   categorias.Add(new Domain.Categoria(3, "Banheiro"));
             */
         }
-      
+     
 
-        public void Salvar(Domain.CategoriaDomain categoria)
+
+            public void Salvar(Domain.CategoriaDomain categoria)
         {
             var categoriaSalva = Obter(categoria.Codigo);
 
