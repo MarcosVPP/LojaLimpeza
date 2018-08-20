@@ -13,6 +13,6 @@
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
-    <mapping resource="book.hbm.xml" />
+    <mapping resource="Categoria.hbm.xml" />
   </session-factory>
 </hibernate-configuration>

@@ -7,6 +7,10 @@ namespace LojaLimpeza.DAL
 {
     public class CategoriaDAO
     {
+        private Configuration myConfiguration;
+        private ISessionFactory sessionFactory;
+        private ISession mySession;
+
         private List<Domain.CategoriaDomain> categorias;
 
         public CategoriaDAO()
@@ -17,7 +21,7 @@ namespace LojaLimpeza.DAL
                   categorias.Add(new Domain.Categoria(3, "Banheiro"));
             */
         }
-        public ISession session;
+      
 
         public void Salvar(Domain.CategoriaDomain categoria)
         {
