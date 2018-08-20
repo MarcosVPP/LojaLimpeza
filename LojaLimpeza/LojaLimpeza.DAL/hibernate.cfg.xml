@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration xmlns="urn;nhibernate-configuratio-2.2">
+  <session-factory>
+    <property name="connection.driver_class">NHibernate.Driver.MysqlServer</property>
+    <property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+    <property name="dialect">NHibernate.Dialect.Mysql5Dialect</property>
+  </session-factory>
+</hibernate-configuration>

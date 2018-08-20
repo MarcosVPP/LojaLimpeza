@@ -1,0 +1,5 @@
+﻿------ Build started: Project: DBLojaLimpeza, Configuration: Debug Any CPU ------
+Failed to debug this project because no SQL Server has been installed on the local machine. Please set the debug connection string in the project properties page.
+Error: The operation could not be completed. Uma operação de arrastar já está em andamento 
+========== Build: 0 succeeded or up-to-date, 1 failed, 0 skipped ==========
+========== Deploy: 0 succeeded, 0 failed, 0 skipped ==========

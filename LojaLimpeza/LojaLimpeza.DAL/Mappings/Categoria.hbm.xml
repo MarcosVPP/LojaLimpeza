@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+<hibernate-mapping xmlns="urn:nhibernate-mapping-3.0"
                    assembly ="LojaLimpeza.Domain"
                    namespace="LojaLimpezaDAL">
-  <class name="Categoria.DAL">
+  <class name="Categoria.DAL" table="Categoria">
     <id name="Codigo">
       <generator class="identity"/>
     </id>
-    <property name="Nome"/>
+    
+    <property name="Nome" 
+     column="NMCategoria" type="string" length="45"/>
   </class>
+  
 </hibernate-mapping>
