@@ -19,7 +19,6 @@ namespace LojaLimpeza.DAL
         }
         public ISession session;
 
-
         public void Salvar(Domain.CategoriaDomain categoria)
         {
             var categoriaSalva = Obter(categoria.Codigo);
