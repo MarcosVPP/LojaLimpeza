@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Internal;
 
-namespace NHibernate.Example.Web.Infrastructure
+namespace LojaLimpeza.DAL.Infraestrutura
 {
 	public class NHibernateToMicrosoftLogger : INHibernateLogger
 	{

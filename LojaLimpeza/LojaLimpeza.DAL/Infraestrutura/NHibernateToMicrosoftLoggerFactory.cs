@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NHibernate.Example.Web.Infrastructure
+namespace LojaLimpeza.DAL.Infraestrutura
 {
 	public class NHibernateToMicrosoftLoggerFactory : INHibernateLoggerFactory
 	{

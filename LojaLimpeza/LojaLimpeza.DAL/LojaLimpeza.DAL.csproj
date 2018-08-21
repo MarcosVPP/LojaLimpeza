@@ -535,8 +535,6 @@
   <ItemGroup>
     <Compile Include="CategoriaDAO.cs" />
     <Compile Include="Infraestrutura\AppSessionFactory.cs" />
-    <Compile Include="Infraestrutura\NHibernateToMicrosoftLogger.cs" />
-    <Compile Include="Infraestrutura\NHibernateToMicrosoftLoggerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -561,9 +559,7 @@
     <EmbeddedResource Include="hibernate.cfg.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-
     </EmbeddedResource>
-
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
