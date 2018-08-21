@@ -62,6 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\LojaLimpeza.Console.Presentation.exe.config" />
+    <None Include="bin\Debug\LojaLimpeza.DAL.dll.config" />
+    <None Include="bin\Debug\LojaLimpeza.Service.dll.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -75,6 +78,28 @@
       <Project>{77eb458e-7301-4633-8015-b826ce188c22}</Project>
       <Name>LojaLimpeza.Service</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Antlr3.Runtime.dll" />
+    <Content Include="bin\Debug\Antlr3.Runtime.xml" />
+    <Content Include="bin\Debug\Google.Protobuf.dll" />
+    <Content Include="bin\Debug\Google.Protobuf.xml" />
+    <Content Include="bin\Debug\Iesi.Collections.dll" />
+    <Content Include="bin\Debug\Iesi.Collections.xml" />
+    <Content Include="bin\Debug\LojaLimpeza.Console.Presentation.exe" />
+    <Content Include="bin\Debug\LojaLimpeza.Console.Presentation.pdb" />
+    <Content Include="bin\Debug\LojaLimpeza.DAL.dll" />
+    <Content Include="bin\Debug\LojaLimpeza.DAL.pdb" />
+    <Content Include="bin\Debug\LojaLimpeza.Domain.dll" />
+    <Content Include="bin\Debug\LojaLimpeza.Domain.pdb" />
+    <Content Include="bin\Debug\LojaLimpeza.Service.dll" />
+    <Content Include="bin\Debug\LojaLimpeza.Service.pdb" />
+    <Content Include="bin\Debug\NHibernate.cfg.xml" />
+    <Content Include="bin\Debug\NHibernate.dll" />
+    <Content Include="bin\Debug\Remotion.Linq.dll" />
+    <Content Include="bin\Debug\Remotion.Linq.EagerFetching.dll" />
+    <Content Include="bin\Debug\Remotion.Linq.EagerFetching.xml" />
+    <Content Include="bin\Debug\Remotion.Linq.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

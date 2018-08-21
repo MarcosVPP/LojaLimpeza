@@ -14,7 +14,6 @@ namespace LojaLimpeza.DAL
 
         private List<Domain.CategoriaDomain> categorias;
 
-
         public CategoriaDAO()
         {
             this.categorias = new List<Domain.CategoriaDomain>();
