@@ -42,6 +42,7 @@ namespace LojaLimpeza.DAL
 
         public List<Domain.CategoriaDomain> Listar()
         {
+            IList<Categorias>_categorias;
             return categorias;
         }
 

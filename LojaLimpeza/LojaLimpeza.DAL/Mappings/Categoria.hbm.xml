@@ -9,6 +9,12 @@
     
     <property name="Nome" 
      column="NMCategoria" type="string" length="45"/>
-  </class>
+    
+    <set name = "Categoria" table = "`Categoria`">
+      <key column = "Codigo"/>
+      <one-to-many class = "Order"/>
+    </set>
+    
+    </class>
   
 </hibernate-mapping>
