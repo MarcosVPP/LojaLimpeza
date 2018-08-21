@@ -1,8 +1,11 @@
-USE [DBLojaLimpeza]
-GO
+use DBLojaLimpeza;
 
-CREATE TABLE [dbo].[Categorias](
-	[Codigo] INT NOT NULL PRIMARY KEY , 
-    [Nome] TEXT NOT NULL
 
-) 
+insert into Categorias
+values('1','Banheira')
+insert into Categorias
+values('2','Pia')
+insert into Categorias
+values('3','Saboneteira')
+
+Select * from Categorias;
