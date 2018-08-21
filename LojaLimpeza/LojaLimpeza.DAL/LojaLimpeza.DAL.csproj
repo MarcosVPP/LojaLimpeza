@@ -558,10 +558,14 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="hibernate.cfg.xml">
+    <EmbeddedResource Include="hibernate.cfg.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+<<<<<<< HEAD
+    </EmbeddedResource>
+=======
     </Content>
+>>>>>>> d02a4334de11b9ab4feb01187c7a18ba87a55cab
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
