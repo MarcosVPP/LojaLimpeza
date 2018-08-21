@@ -8,7 +8,7 @@
         {
             categoriaService = new Service.CategoriaService();
 
-          //  Cadastro();
+            Cadastro();
 
             ShowList();
         }
