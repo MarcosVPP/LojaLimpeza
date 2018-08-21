@@ -91,7 +91,11 @@
     <EmbeddedResource Include="hibernate.cfg.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+<<<<<<< HEAD
     </EmbeddedResource>
+=======
+    </Content>
+>>>>>>> d02a4334de11b9ab4feb01187c7a18ba87a55cab
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
