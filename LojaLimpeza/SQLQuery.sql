@@ -1,4 +1,5 @@
 CREATE DATABASE DBLojaLimpeza;
+DROP DATABASE DBLojaLimpeza;
 
 /*
 CREATE TABLE Categoria(
