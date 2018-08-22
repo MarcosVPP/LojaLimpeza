@@ -70,6 +70,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LojaLimpeza.DAL\LojaLimpeza.DAL.csproj">
+      <Project>{779D85C1-AF11-4086-AF9C-E023E9703A0C}</Project>
+      <Name>LojaLimpeza.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LojaLimpeza.Domain\LojaLimpeza.Domain.csproj">
       <Project>{fed2a558-7a06-4ae5-9783-1012daed24e7}</Project>
       <Name>LojaLimpeza.Domain</Name>

@@ -1,6 +1,6 @@
 ﻿using LojaLimpeza.DAL.Infraestrutura;
+using LojaLimpeza.Domain;
 using NHibernate;
-using NHibernate.Cfg;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -8,6 +8,7 @@ namespace LojaLimpeza.DAL
 {
     public class CategoriaDAO
     {
+
 
         private List<Domain.CategoriaDomain> categorias;
 
@@ -23,9 +24,9 @@ namespace LojaLimpeza.DAL
 
             if (categoriaSalva == null)
             {
-                using (ISession session = (new AppSessionFactory()).OpenSession())
+                using (ISession session = AppSessionFactory.OpenSession())
                 using (ITransaction transaction = session.BeginTransaction())
-                {                    
+                {
                     transaction.Begin();
                     session.Save(categoria);
                     transaction.Commit();
@@ -48,6 +49,15 @@ namespace LojaLimpeza.DAL
 
         public Domain.CategoriaDomain Obter(int codigo)
         {
+            using (ISession session = AppSessionFactory.OpenSession())
+            using (ITransaction transaction = session.BeginTransaction())
+            {
+                transaction.Begin();
+                session.Get(typeof(CategoriaDomain), 1);
+                transaction.Commit();
+                session.Close();
+            }
+
             return categorias.Where(c => c.Codigo == codigo).FirstOrDefault();
         }
 

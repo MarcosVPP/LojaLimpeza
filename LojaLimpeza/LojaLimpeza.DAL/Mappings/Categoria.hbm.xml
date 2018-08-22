@@ -6,15 +6,15 @@
     <id name="Codigo">
       <generator class="identity"/>
     </id>
-    
-    <property name="Nome" 
-     column="NMCategoria" type="string" length="45"/>
-    
+
     <set name = "Categoria" table = "`Categoria`">
       <key column = "Codigo"/>
       <one-to-many class = "Order"/>
     </set>
-    
+
+    <property name="Nome" 
+     column="NMCategoria" type="string" length="45"/>
+ 
     </class>
   
 </hibernate-mapping>

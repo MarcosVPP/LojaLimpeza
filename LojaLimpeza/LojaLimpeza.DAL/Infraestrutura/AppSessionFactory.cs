@@ -1,35 +1,43 @@
-﻿using LojaLimpeza.Domain;
-using NHibernate;
+﻿using NHibernate;
 using NHibernate.Cfg;
-using NHibernate.Dialect;
-using NHibernate.Driver;
-using NHibernate.Mapping.ByCode;
+using NHibernate.Tool.hbm2ddl;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LojaLimpeza.DAL.Infraestrutura
 {
 	public class AppSessionFactory
 	{
-		public Configuration Configuration { get; }
-		public ISessionFactory SessionFactory { get; }
+        private static ISessionFactory fabrica = CriaSessionFactory();
 
-		public AppSessionFactory()
-		{			
-			Configuration = new Configuration();
-            Configuration.AddAssembly(typeof(CategoriaDomain).Assembly);
-            Configuration.DataBaseIntegration(db =>
-                {
-                    db.ConnectionString = @"Server=.\SQLEXPRESS;initial catalog=DBLojaLimpeza;Integrated Security=true";
-                    db.Dialect<MsSql2008Dialect>();
-                    db.Driver<Sql2008ClientDriver>();
-                });
-			Configuration.SessionFactory().GenerateStatistics();
+        private static ISessionFactory CriaSessionFactory()
+        {
+            Configuration cfg = RecuperaConfiguracao();
+            return cfg.BuildSessionFactory();
+        }
 
-			SessionFactory = Configuration.BuildSessionFactory();
-		}
+        public static Configuration RecuperaConfiguracao()
+        {
+            Configuration cfg = new Configuration();
+            cfg.Configure();
+            cfg.AddAssembly(Assembly.GetExecutingAssembly());
 
-		public ISession OpenSession()
-		{
-			return SessionFactory.OpenSession();
-		}
-	}
+            return cfg;
+        }
+        
+        public static void GeraSchema()
+        {
+            Configuration cfg = RecuperaConfiguracao();
+            new SchemaExport(cfg).Create(true, true);
+        }
+
+        public static ISession OpenSession()
+        {
+            return fabrica.OpenSession();
+        }
+    }
 }
