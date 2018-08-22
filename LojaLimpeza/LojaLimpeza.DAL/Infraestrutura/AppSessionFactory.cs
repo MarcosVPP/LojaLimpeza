@@ -18,7 +18,7 @@ namespace LojaLimpeza.DAL.Infraestrutura
             Configuration.AddAssembly(typeof(CategoriaDomain).Assembly);
             Configuration.DataBaseIntegration(db =>
                 {
-                    db.ConnectionString = @"Server=(local)\SQLEXPRESS;initial catalog=DBLojaLimpeza;Integrated Security=true";
+                    db.ConnectionString = @"Server=.\SQLEXPRESS;initial catalog=DBLojaLimpeza;Integrated Security=true";
                     db.Dialect<MsSql2008Dialect>();
                     db.Driver<Sql2008ClientDriver>();
                 });
