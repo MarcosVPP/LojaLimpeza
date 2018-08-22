@@ -5,8 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using LojaLimpeza.Domain;
 
+
+
 namespace LojaLimpeza.Service
 {
+
     public class CategoriaService
     {
         private DAL.CategoriaDAO categoriaDAO = new DAL.CategoriaDAO();
@@ -18,15 +21,7 @@ namespace LojaLimpeza.Service
             return categoriaDAO.Listar();
         }
 
-        public void Salvar(LojaLimpeza.Domain.CategoriaDomain categoria)
-        {
-            throw new NotImplementedException();
-        }
 
-        public void Salvar(LojaLimpeza.Domain.CategoriaDomain categoria)
-        {
-            throw new NotImplementedException();
-        }
     }
  
 }

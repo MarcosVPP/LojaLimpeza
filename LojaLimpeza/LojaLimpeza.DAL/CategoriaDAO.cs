@@ -25,9 +25,11 @@ namespace LojaLimpeza.DAL
             {
                 using (ISession session = (new AppSessionFactory()).OpenSession())
                 using (ITransaction transaction = session.BeginTransaction())
-                {
+                {                    
+                    transaction.Begin();
                     session.Save(categoria);
                     transaction.Commit();
+                    session.Close();
                 }
 
             }
