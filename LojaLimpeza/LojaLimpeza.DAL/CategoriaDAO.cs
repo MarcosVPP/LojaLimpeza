@@ -9,10 +9,6 @@ namespace LojaLimpeza.DAL
     public class CategoriaDAO
     {
 
-        private Configuration myConfiguration;
-        private ISessionFactory sessionFactory;
-        private ISession mySession;
-
         private List<Domain.CategoriaDomain> categorias;
 
         public CategoriaDAO()
