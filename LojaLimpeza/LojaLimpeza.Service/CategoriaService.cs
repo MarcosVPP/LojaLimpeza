@@ -20,10 +20,6 @@ namespace LojaLimpeza.Service
         {
             return categoriaDAO.Listar();
         }
-<<<<<<< HEAD
-=======
-
->>>>>>> 1c77bc2e340aa8a4090a6b725b99b38340dda802
     }
  
 }
