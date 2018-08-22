@@ -1,10 +1,11 @@
 CREATE DATABASE DBLojaLimpeza;
 
+/*
 CREATE TABLE Categoria(
 codigo int primary key not null,
 nome varchar(50)
 );
-
+*/
 
 insert into Categoria
 values('1','Banheiro')
