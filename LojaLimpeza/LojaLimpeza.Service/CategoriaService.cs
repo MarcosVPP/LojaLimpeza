@@ -17,16 +17,6 @@ namespace LojaLimpeza.Service
         {
             return categoriaDAO.Listar();
         }
-
-        public void Salvar(LojaLimpeza.Domain.CategoriaDomain categoria)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Salvar(LojaLimpeza.Domain.CategoriaDomain categoria)
-        {
-            throw new NotImplementedException();
-        }
     }
  
 }
