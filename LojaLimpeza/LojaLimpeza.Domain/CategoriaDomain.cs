@@ -8,10 +8,10 @@ using Microsoft.SqlServer;
 
 namespace LojaLimpeza.Domain
 {
-    public class CategoriaDomain
+    public  class  CategoriaDomain 
     {
-        public int Codigo { get; set; }
-        public string Nome { get; set; }
+        public virtual int Codigo { get; set; }
+        public virtual string Nome { get; set; }
 
         public CategoriaDomain(int codigo, string nome) 
         {

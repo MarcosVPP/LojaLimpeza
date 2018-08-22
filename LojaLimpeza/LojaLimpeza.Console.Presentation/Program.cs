@@ -1,4 +1,6 @@
-﻿namespace LojaLimpeza.Console.Presentation
+﻿using LojaLimpeza.DAL.Infraestrutura;
+
+namespace LojaLimpeza.Console.Presentation
 {
     public class Program
     {
@@ -6,6 +8,8 @@
 
         static void Main(string[] args)
         {
+            //AppSessionFactory.GeraSchema();
+
             categoriaService = new Service.CategoriaService();
 
             Cadastro();
