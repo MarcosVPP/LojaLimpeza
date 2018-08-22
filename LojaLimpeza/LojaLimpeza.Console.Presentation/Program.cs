@@ -37,7 +37,7 @@
 
             Domain.CategoriaDomain categoria = new Domain.CategoriaDomain(codigo, nome);
             
-            categoriaService.Salvar(categoria);
+            categoriaService.Salvar();
         }
     }
 
